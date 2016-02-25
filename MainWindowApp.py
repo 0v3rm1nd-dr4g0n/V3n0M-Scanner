@@ -50,4 +50,4 @@ class MainWindowApp:
         self.logger.info(_('Preparing and starting calculations'))
         conn = thread_Handler.ThreadsConnector()
         wnd = ActionWindow.ActionWindow(self.root, _('Countdown Calculations'), _('Counting down from 100 to 1'))
-        conn.runInGui(wnd, conn, None, sqli_scan.sqli, 'sqli')
+        conn.runInGui(wnd, conn, None, sqli_scan, 'sqli')

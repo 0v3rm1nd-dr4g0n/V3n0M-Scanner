@@ -12,6 +12,8 @@ import socket
 import os
 import subprocess
 import itertools
+import asyncio
+import aiohttp
 
 _ = gettext.gettext
 d0rk = [line.strip() for line in open("statics/d0rks", 'r')]
@@ -29,7 +31,6 @@ ProxyEnabled = False
 def msfscans(connector, progress):
     logger = logging.getLogger(__name__)
     progress.set(0, 1000)
-    while ProxyEnabled = False
     tempvar1 = ""
     tempvar2 = ""
     tempvar3 = ""
